@@ -7,6 +7,7 @@ User.hasMany(Post, {
     foreignKey: 'user_id'
 });
 
+// one to one association
 Post.belongsTo(User, {
     foreignKey: 'user_id'
 });
