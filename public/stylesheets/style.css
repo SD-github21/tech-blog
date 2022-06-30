@@ -40,11 +40,12 @@
   .post, .comment-form {
     border: solid;
   }
+
   .title-bar, .contents {
     display:flex;
     justify-content: space-between;   
   }
-
+  
   .side-title {
     margin-top: 10px;
   }
@@ -54,6 +55,13 @@
   }
 
   .contents {
+    background-color: rgb(248, 251, 210);
+  }
+
+  .comment-form {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(248, 251, 210);
   }
 
