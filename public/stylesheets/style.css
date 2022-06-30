@@ -37,7 +37,7 @@
     font-size: 20px;
   }
 
-  .post {
+  .post, .comment-form {
     border: solid;
   }
   .title-bar, .contents {

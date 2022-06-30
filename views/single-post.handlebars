@@ -7,3 +7,26 @@
         <p>{{post.contents}}</p>
     </div>
 </article>
+
+<form class="comment-form">
+    <div>
+        <label for="comment-body">Comment: </label>
+        <textarea name="comment-body"></textarea>
+    </div>
+    <div>
+        <button type="submit">Add A Comment!</button>
+    </div>
+</form>
+
+<div class="comments">
+    {{#each post.comments }}
+    <section>
+        <div>
+            {{user.username}} on {{created_at}}
+        </div>
+        <div>
+            {{comment_text}}
+        </div>
+    </section>
+    {{/each}}
+</div>
