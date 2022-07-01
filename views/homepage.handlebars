@@ -1,9 +1,5 @@
 <section>
-    {{#each posts}}
-    <article class="post my-3 mx-4">
-        <div class="title-bar">
-            <a href="/post/{{id}}"><h4>{{title}}</h4></a>
-            <h6 class="side-title">Posted by {{user.username}} on {{created_at}}</h6>
-    </article>
+    {{#each posts as |post|}}
+        {{> post-info post}}
     {{/each}}
 </section>
