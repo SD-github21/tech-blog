@@ -83,3 +83,6 @@
     color: #3486eb;
   }
   
+  nav a, nav button {
+    margin-right: 15px;
+  }
