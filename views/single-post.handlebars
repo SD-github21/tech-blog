@@ -8,6 +8,7 @@
     </div>
 </article>
 
+{{#if loggedIn}}
 <form class="comment-form row my-3 mx-4">
     <div class="col-12">
         <label for="comment-body" class="form-label">Comment: </label>
@@ -19,8 +20,9 @@
 </form>
 
 <script src="/javascript/comment.js"></script>
+{{/if}}
 
-{{!-- <div class="comments">
+<div class="comments">
     {{#each post.comments }}
     <section class="comment">
         <div class="meta">
@@ -31,4 +33,4 @@
         </div>
     </section>
     {{/each}}
-</div> --}}
+</div>
