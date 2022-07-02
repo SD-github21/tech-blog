@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment} = require('../models');
+const withAuth = require('../utils/auth');
 
-router.get('/', (req, res) => {
+router.get('/', withAuth, (req, res) => {
     Post.findAll({
         where: {
             // use the ID from the session.
@@ -42,29 +43,9 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/new-post', (req, res) => {
+router.get('/new-post', withAuth, (req, res) => {
     res.render('new-post', { loggedIn: true })
 });
-
-
-// create a post
-// router.post('/new-post', (req, res) => {
-//     Post.create({
-//         title: req.body.title,
-//         contents: req.body.contents,
-//         user_id: req.body.user_id
-//     })
-//      .then(dbPostData => 
-//         res.json(dbPostData),
-//         res.render('new-post', { 
-//             posts,
-//             loggedIn: req.session.loggedIn 
-//         }))
-//      .catch(err => {
-//         console.log(err);
-//         res.status(500).json(err);
-//      });
-// });
 
 
 
