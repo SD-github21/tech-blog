@@ -87,17 +87,18 @@ router.post('/', withAuth, (req, res) => {
      });
 });
 
-// update a post's title
+// update a post's title and contents
 router.put('/:id', withAuth, (req, res) => {
     Post.update(
         {
-            title: req.body.title
+            title: req.body.title,
+            contents: req.body.contents
         },
         {
             where: {
                 id: req.params.id
             }
-        }
+        },
     )
      .then(dbPostData => {
         if (!dbPostData) {
