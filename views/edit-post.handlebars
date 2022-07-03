@@ -1,19 +1,19 @@
 <article>
-    <h2>
-        Edit Post
+    <h2 class="edit-post-header text-center">
+        Edit Your Post
     </h2>
 
     <form class="edit-post-form">
         <div>
             <label for="post-title" class="post-label">Title: </label>
-            <input name="post-title" type="text" value="{{post.title}}" />
+            <input name="post-title" type="text" class="col-9 mx-3 my-3" value="{{post.title}}" />
         </div>
         <div>
             <label for="post-content" class="post-label">Content: </label>
-            <input name="post-content" type="text" value="{{post.contents}}" />
-        </div>
-        <button type="submit">Update Post</button>
-        <button type="button" class="delete-post-btn">Delete</button>
+            <input name="post-content" type="text" class="col-9 mx-3 my-3" value="{{post.contents}}" />
+        </div class="edit-post">
+        <button type="submit" class="update-post-btn btn mx-3 my-3">Update Post</button>
+        <button type="button" class="delete-post-btn btn mx-3 my-3">Delete</button>
     </form>
 </article>
 

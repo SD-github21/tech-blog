@@ -1,5 +1,5 @@
 <section>
-    <h2>Your Dashboard</h2>
+    <h2 class="text-center dashboard-header">Your Dashboard</h2>
      {{#each posts as |post|}}
     <article class="post my-3 mx-4">
         <div class="title-bar">
@@ -13,9 +13,9 @@
     {{/each}}
 </section>
 
-<section>
+<section class="new-post">
     <a href="/dashboard/new-post">
-      <button>Add New Post</button>
+      <button class="add-new-post-btn btn">Add New Post</button>
     </a>
 </section>
 

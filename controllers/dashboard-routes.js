@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment} = require('../models');
 const withAuth = require('../utils/auth');
 
+// get a particular user's posts
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
         where: {
@@ -43,10 +44,12 @@ router.get('/', withAuth, (req, res) => {
     });
 });
 
+// Render a new post page
 router.get('/new-post', withAuth, (req, res) => {
     res.render('new-post', { loggedIn: true })
 });
 
+// edit a post
 router.get('/edit/:id', withAuth, (req,res) => {
     Post.findOne({
         where: {

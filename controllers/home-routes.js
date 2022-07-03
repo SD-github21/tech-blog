@@ -2,6 +2,7 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models')
 
+// get all posts for homepage
 router.get('/', (req, res) => {
     Post.findAll({
         order: [['created_at', 'ASC']],
@@ -38,6 +39,7 @@ router.get('/', (req, res) => {
     });
 });
 
+// find a particular post
 router.get('/post/:id', (req, res) => {
     Post.findOne({
         where: {
@@ -85,7 +87,7 @@ router.get('/post/:id', (req, res) => {
     });
 });
 
-
+// add logic to ensure that user gets redirected to homepage after log in ; otherwise redirect to login page
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
@@ -95,6 +97,7 @@ router.get('/login', (req, res) => {
     res.render('login');
 })
 
+// Render signup pages
 router.get('/signup', (req, res) => {
     res.render('signup')
 })

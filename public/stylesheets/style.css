@@ -37,7 +37,7 @@
     font-size: 20px;
   }
 
-  .post, .comment-form {
+  .post, .comment-form, .comment {
     border: solid;
   }
 
@@ -54,7 +54,7 @@
     background-color: aqua;
   }
 
-  .contents {
+  .contents, .meta-comments, .comment {
     background-color: rgb(248, 251, 210);
   }
 
@@ -64,6 +64,7 @@
     align-items: center;
     background-color: rgb(248, 251, 210);
   }
+
 
   .btn-no-style {
     background: none;
@@ -86,3 +87,30 @@
   nav a, nav button {
     margin-right: 15px;
   }
+
+footer {
+  display:flex;
+  justify-content: center;
+  background-color: aqua;
+
+}
+
+.new-post {
+  display:flex;
+  justify-content: center;
+}
+
+.login-btn, .sign-up-btn, .add-new-post-btn, .create-post-btn, .add-comment-btn, .delete-post-btn, .update-post-btn {
+  margin-top: 15px;
+  margin-bottom: 15px;  
+  background-color: rgb(243, 197, 225);
+    
+}
+
+.login-header, .signup-header, .edit-post-header, .dashboard-header, .new-post-header {
+  background-color: rgb(248, 251, 210);
+}
+
+.comment-text {
+  background-color: rgb(243, 197, 225);
+}
