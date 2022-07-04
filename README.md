@@ -97,21 +97,27 @@ This application's helper of date format was tested via Jest.
 (1) The following screen shot depicts the home page:
 ![alt text](public/images/homepage.png)
 
-(2) The following screen shots depict the sign up / login page:
+(2) The following screen shots depict the sign up / login pages:
+![alt text](public/images/signup-page.png)
+
 ![alt text](public/images/login-page.png)
 
 (3) The following screen shot depicts the dashboard:
-![alt text](public)
+![alt text](public/images/dashboard-page.png)
 
-(4) The following screen shot depicts the edit post page:
-![alt text](public)
+(5) The following screen shot depicts the create post page:
+![alt text](public/images/create-post.png)
 
-(5) The following screen shot depicts the add a comment page:
+(6) The following screen shot depicts the edit post page:
+![alt text](public/images/edit-post.png)
+
+(7) The following screen shot depicts the add a comment page:
+![alt text](public/images/add-comment.png)
 
 ### **Deliverables**
 
 **Tech Blog Webpage:**<br>
-
+https://damp-ravine-62752.herokuapp.com/
 
 **Tech Blog GitHub Repository:**<br>
 https://github.com/SD-github21/tech-blog
