@@ -54,7 +54,7 @@
     background-color: aqua;
   }
 
-  .contents, .meta-comments, .comment {
+  .contents, .comment {
     background-color: rgb(248, 251, 210);
   }
 
@@ -111,6 +111,7 @@ footer {
   background-color: rgb(248, 251, 210);
 }
 
-.comment-text {
+.meta-comments, .comment-text {
+  font-size: 14px;
   background-color: rgb(243, 197, 225);
 }
